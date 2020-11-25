@@ -1,0 +1,242 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+ 16.39    243.32   243.32                             main (percolate.c:156 @ 401a74)
+ 13.41    442.41   199.09                             main (percolate.c:155 @ 4019d8)
+ 12.97    635.01   192.59                             main (percolate.c:157 @ 401b18)
+ 12.27    817.16   182.15                             main (percolate.c:152 @ 401981)
+ 12.07    996.31   179.15                             main (percolate.c:158 @ 401bbc)
+ 10.99   1159.44   163.13                             main (percolate.c:150 @ 401c8f)
+  7.73   1274.21   114.78                             main (percolate.c:154 @ 4019af)
+  7.12   1379.96   105.75                             main (percolate.c:161 @ 401c8b)
+  5.46   1460.98    81.01                             main (percolate.c:159 @ 401c60)
+  1.68   1485.92    24.95                             main (percolate.c:150 @ 401975)
+  0.01   1486.09     0.17                             main (percolate.c:148 @ 401969)
+  0.01   1486.26     0.17                             main (percolate.c:148 @ 401c9f)
+  0.01   1486.37     0.11                             clustcompare (percolate.c:316 @ 402305)
+  0.01   1486.48     0.11                             clustcompare (percolate.c:301 @ 4022ba)
+  0.00   1486.54     0.06                             clustcompare (percolate.c:307 @ 4022e3)
+  0.00   1486.60     0.06                             main (percolate.c:119 @ 401833)
+  0.00   1486.65     0.05                             clustcompare (percolate.c:304 @ 4022cf)
+  0.00   1486.70     0.05                             main (percolate.c:204 @ 401e16)
+  0.00   1486.75     0.05                             main (percolate.c:221 @ 401f0c)
+  0.00   1486.80     0.05                             main (percolate.c:230 @ 401f92)
+  0.00   1486.84     0.05                             main (percolate.c:132 @ 401937)
+  0.00   1486.89     0.05                             random_uniform (uni.c:36 @ 40106b)
+  0.00   1486.93     0.04                             clustcompare (percolate.c:308 @ 4022ec)
+  0.00   1486.97     0.04                             main (percolate.c:110 @ 4017c6)
+  0.00   1487.01     0.04                             main (percolate.c:275 @ 40219d)
+  0.00   1487.04     0.03                             clustcompare (percolate.c:318 @ 40230b)
+  0.00   1487.07     0.03                             random_uniform (uni.c:27 @ 400fa6)
+  0.00   1487.10     0.03                             main (percolate.c:228 @ 401f68)
+  0.00   1487.12     0.03                             main (percolate.c:118 @ 401827)
+  0.00   1487.15     0.03                             main (percolate.c:179 @ 401d19)
+  0.00   1487.17     0.03                             random_uniform (uni.c:29 @ 400fc6)
+  0.00   1487.19     0.02                             main (percolate.c:137 @ 40190e)
+  0.00   1487.21     0.02                             main (percolate.c:220 @ 401ef2)
+  0.00   1487.23     0.02                             main (percolate.c:222 @ 401f27)
+  0.00   1487.25     0.02                             main (percolate.c:226 @ 401fd2)
+  0.00   1487.27     0.02                             main (percolate.c:273 @ 402232)
+  0.00   1487.29     0.02                             random_uniform (uni.c:32 @ 400fff)
+  0.00   1487.31     0.02                             random_uniform (uni.c:38 @ 4010a1)
+  0.00   1487.32     0.02                             random_uniform (uni.c:39 @ 4010a6)
+  0.00   1487.34     0.02                             main (percolate.c:122 @ 401842)
+  0.00   1487.35     0.02                             main (percolate.c:134 @ 4018e0)
+  0.00   1487.37     0.02                             random_uniform (uni.c:28 @ 400fb0)
+  0.00   1487.38     0.01                             clustcompare (percolate.c:305 @ 4022d9)
+  0.00   1487.39     0.01                             main (percolate.c:108 @ 4017f0)
+  0.00   1487.40     0.01                             main (percolate.c:121 @ 40183e)
+  0.00   1487.41     0.01                             main (percolate.c:136 @ 40190a)
+  0.00   1487.42     0.01                             main (percolate.c:218 @ 401ee9)
+  0.00   1487.43     0.01                             main (percolate.c:218 @ 401f43)
+  0.00   1487.44     0.01                             main (percolate.c:243 @ 40205d)
+  0.00   1487.45     0.01                             main (percolate.c:277 @ 4021c7)
+  0.00   1487.46     0.01                             main (percolate.c:280 @ 40220b)
+  0.00   1487.47     0.01                             main (percolate.c:285 @ 402213)
+  0.00   1487.47     0.01                             main (percolate.c:181 @ 401d5d)
+  0.00   1487.48     0.01                             main (percolate.c:298 @ 4022b8)
+  0.00   1487.48     0.01                             random_uniform (uni.c:37 @ 40108b)
+  0.00   1487.48     0.00 12250000     0.00     0.00  random_uniform (uni.c:23 @ 400f6e)
+  0.00   1487.48     0.00        4     0.00     0.00  subarray (arralloc.c:52 @ 400b66)
+  0.00   1487.48     0.00        3     0.00     0.00  arralloc (arralloc.c:95 @ 400cbe)
+  0.00   1487.48     0.00        1     0.00     0.00  percsort (percolate.c:321 @ 40230d)
+  0.00   1487.48     0.00        1     0.00     0.00  rinit (uni.c:87 @ 401244)
+  0.00   1487.48     0.00        1     0.00     0.00  rstart (uni.c:42 @ 4010a8)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 0.00% of 1487.48 seconds
+
+index % time    self  children    called     name
+                                                 <spontaneous>
+[14]     0.0    0.11    0.00                 clustcompare (percolate.c:301 @ 4022ba) [14]
+-----------------------------------------------
+                0.00    0.00 12250000/12250000     main (percolate.c:116 @ 40181e) [156]
+[56]     0.0    0.00    0.00 12250000         random_uniform (uni.c:23 @ 400f6e) [56]
+-----------------------------------------------
+                0.00    0.00       1/4           subarray (arralloc.c:62 @ 400c31) [296]
+                0.00    0.00       3/4           arralloc (arralloc.c:145 @ 400f0d) [83]
+[57]     0.0    0.00    0.00       4         subarray (arralloc.c:52 @ 400b66) [57]
+-----------------------------------------------
+                0.00    0.00       1/3           main (percolate.c:99 @ 401782) [149]
+                0.00    0.00       1/3           main (percolate.c:216 @ 401ea7) [194]
+                0.00    0.00       1/3           main (percolate.c:217 @ 401ec8) [195]
+[58]     0.0    0.00    0.00       3         arralloc (arralloc.c:95 @ 400cbe) [58]
+-----------------------------------------------
+                0.00    0.00       1/1           main (percolate.c:234 @ 401fee) [199]
+[59]     0.0    0.00    0.00       1         percsort (percolate.c:321 @ 40230d) [59]
+-----------------------------------------------
+                0.00    0.00       1/1           main (percolate.c:101 @ 4017aa) [150]
+[60]     0.0    0.00    0.00       1         rinit (uni.c:87 @ 401244) [60]
+-----------------------------------------------
+                0.00    0.00       1/1           rinit (uni.c:147 @ 401467) [264]
+[61]     0.0    0.00    0.00       1         rstart (uni.c:42 @ 4010a8) [61]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [58] arralloc (arralloc.c:95 @ 400cbe) [7] main (percolate.c:154 @ 4019af) [25] main (percolate.c:275 @ 40219d)
+  [14] clustcompare (percolate.c:301 @ 4022ba) [2] main (percolate.c:155 @ 4019d8) [50] main (percolate.c:277 @ 4021c7)
+  [17] clustcompare (percolate.c:304 @ 4022cf) [1] main (percolate.c:156 @ 401a74) [51] main (percolate.c:280 @ 40220b)
+  [43] clustcompare (percolate.c:305 @ 4022d9) [3] main (percolate.c:157 @ 401b18) [52] main (percolate.c:285 @ 402213)
+  [15] clustcompare (percolate.c:307 @ 4022e3) [5] main (percolate.c:158 @ 401bbc) [36] main (percolate.c:273 @ 402232)
+  [23] clustcompare (percolate.c:308 @ 4022ec) [9] main (percolate.c:159 @ 401c60) [54] main (percolate.c:298 @ 4022b8)
+  [13] clustcompare (percolate.c:316 @ 402305) [8] main (percolate.c:161 @ 401c8b) [59] percsort (percolate.c:321 @ 40230d)
+  [26] clustcompare (percolate.c:318 @ 40230b) [6] main (percolate.c:150 @ 401c8f) [56] random_uniform (uni.c:23 @ 400f6e)
+  [24] main (percolate.c:110 @ 4017c6) [12] main (percolate.c:148 @ 401c9f) [27] random_uniform (uni.c:27 @ 400fa6)
+  [44] main (percolate.c:108 @ 4017f0) [30] main (percolate.c:179 @ 401d19) [42] random_uniform (uni.c:28 @ 400fb0)
+  [29] main (percolate.c:118 @ 401827) [53] main (percolate.c:181 @ 401d5d) [31] random_uniform (uni.c:29 @ 400fc6)
+  [16] main (percolate.c:119 @ 401833) [18] main (percolate.c:204 @ 401e16) [37] random_uniform (uni.c:32 @ 400fff)
+  [45] main (percolate.c:121 @ 40183e) [47] main (percolate.c:218 @ 401ee9) [22] random_uniform (uni.c:36 @ 40106b)
+  [40] main (percolate.c:122 @ 401842) [33] main (percolate.c:220 @ 401ef2) [55] random_uniform (uni.c:37 @ 40108b)
+  [41] main (percolate.c:134 @ 4018e0) [19] main (percolate.c:221 @ 401f0c) [38] random_uniform (uni.c:38 @ 4010a1)
+  [46] main (percolate.c:136 @ 40190a) [34] main (percolate.c:222 @ 401f27) [39] random_uniform (uni.c:39 @ 4010a6)
+  [32] main (percolate.c:137 @ 40190e) [48] main (percolate.c:218 @ 401f43) [60] rinit (uni.c:87 @ 401244)
+  [21] main (percolate.c:132 @ 401937) [28] main (percolate.c:228 @ 401f68) [61] rstart (uni.c:42 @ 4010a8)
+  [11] main (percolate.c:148 @ 401969) [20] main (percolate.c:230 @ 401f92) [57] subarray (arralloc.c:52 @ 400b66)
+  [10] main (percolate.c:150 @ 401975) [35] main (percolate.c:226 @ 401fd2)
+   [4] main (percolate.c:152 @ 401981) [49] main (percolate.c:243 @ 40205d)

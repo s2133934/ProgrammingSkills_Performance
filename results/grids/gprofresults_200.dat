@@ -1,0 +1,177 @@
+Flat profile:
+
+Each sample counts as 0.01 seconds.
+  %   cumulative   self              self     total           
+ time   seconds   seconds    calls  Ts/call  Ts/call  name    
+ 25.97      0.07     0.07                             main (percolate.c:155 @ 4019d8)
+ 25.97      0.14     0.07                             main (percolate.c:156 @ 401a74)
+ 14.84      0.18     0.04                             main (percolate.c:157 @ 401b18)
+ 11.13      0.21     0.03                             main (percolate.c:152 @ 401981)
+  9.28      0.24     0.03                             main (percolate.c:158 @ 401bbc)
+  3.71      0.25     0.01                             main (percolate.c:154 @ 4019af)
+  3.71      0.26     0.01                             main (percolate.c:161 @ 401c8b)
+  3.71      0.27     0.01                             main (percolate.c:150 @ 401c8f)
+  1.86      0.27     0.01                             main (percolate.c:159 @ 401c60)
+  0.00      0.27     0.00    40000     0.00     0.00  random_uniform (uni.c:23 @ 400f6e)
+  0.00      0.27     0.00        4     0.00     0.00  subarray (arralloc.c:52 @ 400b66)
+  0.00      0.27     0.00        3     0.00     0.00  arralloc (arralloc.c:95 @ 400cbe)
+  0.00      0.27     0.00        1     0.00     0.00  percsort (percolate.c:321 @ 40230d)
+  0.00      0.27     0.00        1     0.00     0.00  rinit (uni.c:87 @ 401244)
+  0.00      0.27     0.00        1     0.00     0.00  rstart (uni.c:42 @ 4010a8)
+
+ %         the percentage of the total running time of the
+time       program used by this function.
+
+cumulative a running sum of the number of seconds accounted
+ seconds   for by this function and those listed above it.
+
+ self      the number of seconds accounted for by this
+seconds    function alone.  This is the major sort for this
+           listing.
+
+calls      the number of times this function was invoked, if
+           this function is profiled, else blank.
+
+ self      the average number of milliseconds spent in this
+ms/call    function per call, if this function is profiled,
+	   else blank.
+
+ total     the average number of milliseconds spent in this
+ms/call    function and its descendents per call, if this
+	   function is profiled, else blank.
+
+name       the name of the function.  This is the minor sort
+           for this listing. The index shows the location of
+	   the function in the gprof listing. If the index is
+	   in parenthesis it shows where it would appear in
+	   the gprof listing if it were to be printed.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+		     Call graph (explanation follows)
+
+
+granularity: each sample hit covers 2 byte(s) for 3.70% of 0.27 seconds
+
+index % time    self  children    called     name
+                0.00    0.00   40000/40000       main (percolate.c:116 @ 40181e) [119]
+[10]     0.0    0.00    0.00   40000         random_uniform (uni.c:23 @ 400f6e) [10]
+-----------------------------------------------
+                0.00    0.00       1/4           subarray (arralloc.c:62 @ 400c31) [296]
+                0.00    0.00       3/4           arralloc (arralloc.c:145 @ 400f0d) [37]
+[11]     0.0    0.00    0.00       4         subarray (arralloc.c:52 @ 400b66) [11]
+-----------------------------------------------
+                0.00    0.00       1/3           main (percolate.c:99 @ 401782) [110]
+                0.00    0.00       1/3           main (percolate.c:216 @ 401ea7) [171]
+                0.00    0.00       1/3           main (percolate.c:217 @ 401ec8) [172]
+[12]     0.0    0.00    0.00       3         arralloc (arralloc.c:95 @ 400cbe) [12]
+-----------------------------------------------
+                0.00    0.00       1/1           main (percolate.c:234 @ 401fee) [184]
+[13]     0.0    0.00    0.00       1         percsort (percolate.c:321 @ 40230d) [13]
+-----------------------------------------------
+                0.00    0.00       1/1           main (percolate.c:101 @ 4017aa) [111]
+[14]     0.0    0.00    0.00       1         rinit (uni.c:87 @ 401244) [14]
+-----------------------------------------------
+                0.00    0.00       1/1           rinit (uni.c:147 @ 401467) [264]
+[15]     0.0    0.00    0.00       1         rstart (uni.c:42 @ 4010a8) [15]
+-----------------------------------------------
+
+ This table describes the call tree of the program, and was sorted by
+ the total amount of time spent in each function and its children.
+
+ Each entry in this table consists of several lines.  The line with the
+ index number at the left hand margin lists the current function.
+ The lines above it list the functions that called this function,
+ and the lines below it list the functions this one called.
+ This line lists:
+     index	A unique number given to each element of the table.
+		Index numbers are sorted numerically.
+		The index number is printed next to every function name so
+		it is easier to look up where the function is in the table.
+
+     % time	This is the percentage of the `total' time that was spent
+		in this function and its children.  Note that due to
+		different viewpoints, functions excluded by options, etc,
+		these numbers will NOT add up to 100%.
+
+     self	This is the total amount of time spent in this function.
+
+     children	This is the total amount of time propagated into this
+		function by its children.
+
+     called	This is the number of times the function was called.
+		If the function called itself recursively, the number
+		only includes non-recursive calls, and is followed by
+		a `+' and the number of recursive calls.
+
+     name	The name of the current function.  The index number is
+		printed after it.  If the function is a member of a
+		cycle, the cycle number is printed between the
+		function's name and the index number.
+
+
+ For the function's parents, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the function into this parent.
+
+     children	This is the amount of time that was propagated from
+		the function's children into this parent.
+
+     called	This is the number of times this parent called the
+		function `/' the total number of times the function
+		was called.  Recursive calls to the function are not
+		included in the number after the `/'.
+
+     name	This is the name of the parent.  The parent's index
+		number is printed after it.  If the parent is a
+		member of a cycle, the cycle number is printed between
+		the name and the index number.
+
+ If the parents of the function cannot be determined, the word
+ `<spontaneous>' is printed in the `name' field, and all the other
+ fields are blank.
+
+ For the function's children, the fields have the following meanings:
+
+     self	This is the amount of time that was propagated directly
+		from the child into the function.
+
+     children	This is the amount of time that was propagated from the
+		child's children to the function.
+
+     called	This is the number of times the function called
+		this child `/' the total number of times the child
+		was called.  Recursive calls by the child are not
+		listed in the number after the `/'.
+
+     name	This is the name of the child.  The child's index
+		number is printed after it.  If the child is a
+		member of a cycle, the cycle number is printed
+		between the name and the index number.
+
+ If there are any cycles (circles) in the call graph, there is an
+ entry for the cycle-as-a-whole.  This entry shows who called the
+ cycle (as parents) and the members of the cycle (as children.)
+ The `+' recursive calls entry shows the number of function calls that
+ were internal to the cycle, and the calls entry for each member shows,
+ for that member, how many times it was called from other members of
+ the cycle.
+
+Copyright (C) 2012-2018 Free Software Foundation, Inc.
+
+Copying and distribution of this file, with or without modification,
+are permitted in any medium without royalty provided the copyright
+notice and this notice are preserved.
+
+Index by function name
+
+  [12] arralloc (arralloc.c:95 @ 400cbe) [3] main (percolate.c:157 @ 401b18) [13] percsort (percolate.c:321 @ 40230d)
+   [4] main (percolate.c:152 @ 401981) [5] main (percolate.c:158 @ 401bbc) [10] random_uniform (uni.c:23 @ 400f6e)
+   [6] main (percolate.c:154 @ 4019af) [9] main (percolate.c:159 @ 401c60) [14] rinit (uni.c:87 @ 401244)
+   [1] main (percolate.c:155 @ 4019d8) [7] main (percolate.c:161 @ 401c8b) [15] rstart (uni.c:42 @ 4010a8)
+   [2] main (percolate.c:156 @ 401a74) [8] main (percolate.c:150 @ 401c8f) [11] subarray (arralloc.c:52 @ 400b66)
